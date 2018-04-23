@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-US">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <ObjectDataSource ComponentName="dashboardObjectDataSource1">
+      <Name>Object Data Source 1</Name>
+      <DataSource Type="Grid_DateOccurring.DataGenerator, Grid_DateOccurring, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+      <DataMember>CreateData</DataMember>
+    </ObjectDataSource>
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem1" Name="Grid 1" DataSource="dashboardObjectDataSource1">
+      <DataItems>
+        <Dimension DataMember="Date" SortOrder="Descending" DateTimeGroupInterval="None" UniqueName="DataItem0" />
+        <Measure DataMember="Sales" UniqueName="DataItem1" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn>
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+        <GridMeasureColumn>
+          <Measure UniqueName="DataItem1" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <GridOptions />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="gridDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
