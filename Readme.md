@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/Grid_DateOccurring/Form1.cs) (VB: [Form1.vb](./VB/Grid_DateOccurring/Form1.vb))
+<!-- default file list end -->
 # How to apply conditional formatting to Grid cells using the Date Occurring format condition
 
 
