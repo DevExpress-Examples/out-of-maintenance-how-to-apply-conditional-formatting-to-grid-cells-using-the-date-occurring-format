@@ -6,7 +6,7 @@
 # How to Apply Date Occurring Conditional Formatting to Grid Cells
 
 
-The **Date Occurring** format condition (the [FormatConditionDateOccuring](docs.devexpress.devx/Dashboard/DevExpress.DashboardCommon.FormatConditionDateOccuring) class) allows you to apply formatting to date-time values of a specific date and/or date interval relative to the current date.
+The **Date Occurring** format condition (the [FormatConditionDateOccuring](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.FormatConditionDateOccuring) class) allows you to apply formatting to date-time values of a specific date and/or date interval relative to the current date.
 
 This example demonstrates how to apply conditional formatting to Grid cells whose values fall into one of the predefined intervals.
 
