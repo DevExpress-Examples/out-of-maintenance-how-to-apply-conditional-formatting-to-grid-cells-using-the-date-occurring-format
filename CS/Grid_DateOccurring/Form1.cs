@@ -14,15 +14,15 @@ namespace Grid_DateOccurring {
             GridDashboardItem grid = (GridDashboardItem)dashboard.Items["gridDashboardItem1"];
             GridDimensionColumn date = (GridDimensionColumn)grid.Columns[0];
 
-            GridItemFormatRule dateOccuringRule = new GridItemFormatRule(date);
-            FormatConditionDateOccurring dateOccuringCondition = new FormatConditionDateOccurring();
-            dateOccuringCondition.DateType = FilterDateType.MonthAgo1 | FilterDateType.MonthAgo2;
-            dateOccuringCondition.StyleSettings = 
+            GridItemFormatRule dateOccurringRule = new GridItemFormatRule(date);
+            FormatConditionDateOccurring dateOccurringCondition = new FormatConditionDateOccurring();
+            dateOccurringCondition.DateType = FilterDateType.MonthAgo1 | FilterDateType.MonthAgo2;
+            dateOccurringCondition.StyleSettings = 
                 new AppearanceSettings(FormatConditionAppearanceType.PaleOrange);
-            dateOccuringRule.Condition = dateOccuringCondition;
-            dateOccuringRule.ApplyToRow = true;
+            dateOccurringRule.Condition = dateOccurringCondition;
+            dateOccurringRule.ApplyToRow = true;
 
-            grid.FormatRules.Add(dateOccuringRule);            
+            grid.FormatRules.Add(dateOccurringRule);            
         }
     }
 }

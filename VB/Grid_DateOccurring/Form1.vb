@@ -16,14 +16,14 @@ Namespace Grid_DateOccurring
 			Dim grid As GridDashboardItem = CType(dashboard.Items("gridDashboardItem1"), GridDashboardItem)
 			Dim [date] As GridDimensionColumn = CType(grid.Columns(0), GridDimensionColumn)
 
-			Dim dateOccuringRule As New GridItemFormatRule([date])
-			Dim dateOccuringCondition As New FormatConditionDateOccurring()
-			dateOccuringCondition.DateType = FilterDateType.MonthAgo1 Or FilterDateType.MonthAgo2
-			dateOccuringCondition.StyleSettings = New AppearanceSettings(FormatConditionAppearanceType.PaleOrange)
-			dateOccuringRule.Condition = dateOccuringCondition
-			dateOccuringRule.ApplyToRow = True
+			Dim dateOccurringRule As New GridItemFormatRule([date])
+			Dim dateOccurringCondition As New FormatConditionDateOccurring()
+			dateOccurringCondition.DateType = FilterDateType.MonthAgo1 Or FilterDateType.MonthAgo2
+			dateOccurringCondition.StyleSettings = New AppearanceSettings(FormatConditionAppearanceType.PaleOrange)
+			dateOccurringRule.Condition = dateOccuringCondition
+			dateOccurringRule.ApplyToRow = True
 
-			grid.FormatRules.Add(dateOccuringRule)
+			grid.FormatRules.Add(dateOccurringRule)
 		End Sub
 	End Class
 End Namespace
