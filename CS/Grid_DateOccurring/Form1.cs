@@ -5,7 +5,11 @@ namespace Grid_DateOccurring {
     public partial class Form1 : DevExpress.XtraEditors.XtraForm {
         public Form1() {
             InitializeComponent();
-            Dashboard dashboard = new Dashboard(); dashboard.LoadFromXml(@"..\..\Data\Dashboard.xml");
+
+            dashboardViewer1.DataSourceOptions.ObjectDataSourceLoadingBehavior = DevExpress.DataAccess.DocumentLoadingBehavior.LoadAsIs;
+
+            Dashboard dashboard = new Dashboard();
+            dashboard.LoadFromXml(@"..\..\Data\Dashboard.xml");
             dashboardViewer1.Dashboard = dashboard;
             GridDashboardItem grid = (GridDashboardItem)dashboard.Items["gridDashboardItem1"];
             GridDimensionColumn date = (GridDimensionColumn)grid.Columns[0];
