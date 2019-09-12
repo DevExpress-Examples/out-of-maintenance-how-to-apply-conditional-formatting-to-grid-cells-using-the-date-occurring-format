@@ -15,7 +15,7 @@ namespace Grid_DateOccurring {
             GridDimensionColumn date = (GridDimensionColumn)grid.Columns[0];
 
             GridItemFormatRule dateOccuringRule = new GridItemFormatRule(date);
-            FormatConditionDateOccuring dateOccuringCondition = new FormatConditionDateOccuring();
+            FormatConditionDateOccurring dateOccuringCondition = new FormatConditionDateOccurring();
             dateOccuringCondition.DateType = FilterDateType.MonthAgo1 | FilterDateType.MonthAgo2;
             dateOccuringCondition.StyleSettings = 
                 new AppearanceSettings(FormatConditionAppearanceType.PaleOrange);

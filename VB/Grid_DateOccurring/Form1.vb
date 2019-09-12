@@ -17,7 +17,7 @@ Namespace Grid_DateOccurring
 			Dim [date] As GridDimensionColumn = CType(grid.Columns(0), GridDimensionColumn)
 
 			Dim dateOccuringRule As New GridItemFormatRule([date])
-			Dim dateOccuringCondition As New FormatConditionDateOccuring()
+			Dim dateOccuringCondition As New FormatConditionDateOccurring()
 			dateOccuringCondition.DateType = FilterDateType.MonthAgo1 Or FilterDateType.MonthAgo2
 			dateOccuringCondition.StyleSettings = New AppearanceSettings(FormatConditionAppearanceType.PaleOrange)
 			dateOccuringRule.Condition = dateOccuringCondition
