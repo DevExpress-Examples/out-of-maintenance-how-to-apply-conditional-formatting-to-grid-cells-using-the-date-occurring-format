@@ -20,7 +20,7 @@ Namespace Grid_DateOccurring
 			Dim dateOccurringCondition As New FormatConditionDateOccurring()
 			dateOccurringCondition.DateType = FilterDateType.MonthAgo1 Or FilterDateType.MonthAgo2
 			dateOccurringCondition.StyleSettings = New AppearanceSettings(FormatConditionAppearanceType.PaleOrange)
-			dateOccurringRule.Condition = dateOccuringCondition
+			dateOccurringRule.Condition = dateOccurringCondition
 			dateOccurringRule.ApplyToRow = True
 
 			grid.FormatRules.Add(dateOccurringRule)
